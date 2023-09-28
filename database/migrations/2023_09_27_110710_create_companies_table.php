@@ -18,6 +18,9 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('address');
+            $table->string('dimensions');
+            $table->string('weight');
+            $table->string('height');
             $table->timestamps();
         });
     }

@@ -59,6 +59,37 @@
                         @enderror
                     </div>
                 </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Company dimensions:</strong>
+                        <input type="text" name="dimensions" value="{{ $company->dimensions }}" class="form-control"
+                            placeholder="Company dimensions">
+                        @error('dimensions')
+                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                        @enderror
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Company weight:</strong>
+                        <input type="text" name="weight" value="{{ $company->weight }}" class="form-control"
+                            placeholder="Company weight">
+                        @error('weight')
+                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                        @enderror
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Company height:</strong>
+                        <input type="text" name="height" value="{{ $company->height }}" class="form-control"
+                            placeholder="Company height">
+                        @error('height')
+                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                        @enderror
+                    </div>
+                </div>
                 <button type="submit" class="btn btn-primary ml-3">Submit</button>
             </div>
         </form>

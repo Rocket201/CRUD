@@ -39,6 +39,9 @@ class CompanyController extends Controller
             'name' => 'required',
             'email' => 'required',
             'address' => 'required',
+            'dimensions'=> 'required',
+            'weight'=> 'required',
+            'height'=> 'required',
         ]);
         
         Company::create($request->post());
